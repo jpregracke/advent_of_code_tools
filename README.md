@@ -27,35 +27,50 @@ Some of the solution execution commands also take an optional `part` parameter. 
 
 #### Day Initialization Command
 The following command will initialize the specified day, downloading your personal input file and creating the empty solution files. If a file already exists, it will _not_ be overwritten, but a notice will be printed out.
+
 ```rake aoc:init_day[DAY,YEAR]```
 
 #### Solution Execution
 There are 6 ways of running solutions, one for a single day with 
 
 **Running "today's" solution**
+
 ```rake aoc:today[PART]``` 
+
 This option is only available during the active run of Advent of Code, and will run the current day's solution. With the optional PART argument, it will run only the specified part.
 
 **Running "today's" solution with example data**
+
 ```rake aoc:today_example[PART]``` 
+
 This is the same as the above, but using the example data defined in the solution file instead of your input data.
 
 **Running a specific day's solution**
+
 ```rake aoc:day[DAY,YEAR,PART]``` 
+
 This will run the specified day's solution. As with the today command, with the optional PART argument, it will run only the specified part.
 
 **Running a specific day's solution with example data**
+
 ```rake aoc:day_example[DAY,YEAR,PART]``` 
+
 This is the same as the above, but using the example data defined in the solution file instead of your input data.
 
 **Running an entire year's solutions**
+
 ```rake aoc:year[YEAR]```
+
 This will run all available solutions for the specified year, or the current year if the year argument is excluded.
 
 **Running an entire year's solutions**
+
 ```rake aoc:all```
+
 ```rake aoc```
+
 ```rake```
+
 All of the above commands will run all available solutions for all years.
 
 For both the year and all commands, all possible solution days are attempted.
