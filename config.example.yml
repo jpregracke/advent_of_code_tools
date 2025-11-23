@@ -1,0 +1,21 @@
+# Replace with your Advent of Code session cookie value
+session: YOUR_SESSION_COOKIE
+
+# The subdirectory under the 'templates' directory that contains template
+# files to build new solution files. All files in this directory will be
+# copied to the new solution directory when generating a new solution. If the
+# file ends in '.erb', it will be processed as an ERB template, first. The
+# strings "YEAR" and "DAY" in the file names will be replaced with the actual
+# year and day numbers. The values `year` and `day` are avilable for use
+# within the ERB templates.
+solution_template_directory: ruby
+
+# Solutions base directory within the root directory. Each year's solutions
+# will be stored in a subdirectory named after the year, with each day in its
+# own subdirectory beneath that.
+solutions_base_dir: solutions
+
+# Maximum width of the console output. This is mostly used for wrapping long
+# lines when outputting the problem description. Set this value to 0 or null
+# to disable line wrapping.
+console_line_length: 120

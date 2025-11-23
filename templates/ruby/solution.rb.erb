@@ -1,0 +1,42 @@
+require 'solution'
+
+module AoC<%= year %>
+  class Day<%= day %> < Solution
+    module DayConfig
+      YEAR = <%= year %>
+      DAY = <%= day %>
+
+      # Replace nil with expected results for example data if available
+      EXPECTED_EXAMPLE_RESULTS = {
+        example: { part1: nil, part2: nil },
+        full: { part1: nil, part2: nil }
+      }
+
+      # Replace the contents of EXAMPLE_DATA_PART1 and PART2 with example input if available
+      EXAMPLE_DATA_PART1 = <<~DATA.strip
+      DATA
+
+      # Use this if part 2 has the same example data as part 1
+      EXAMPLE_DATA_PART2 = EXAMPLE_DATA_PART1
+
+      # Use this if part 2 has different example data as part 1
+      # EXAMPLE_DATA_PART2 = <<~DATA.strip
+      # DATA
+    end
+
+    # Uncomment and customize this method to parse the input as needed
+    # def parse_input(input)
+    #   input
+    # end
+
+    def part1(input)
+      # Implement part 1 solution here
+      :not_implemented
+    end
+
+    def part2(input)
+      # Implement part 2 solution here
+      :not_implemented
+    end
+  end
+end
